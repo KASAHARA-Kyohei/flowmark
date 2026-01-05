@@ -1,0 +1,15 @@
+{
+  "name": "flowmark",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev:web",
+    "dev:web": "npm --workspace packages/web run dev",
+    "build": "npm run build:web",
+    "build:web": "npm --workspace packages/web run build",
+    "preview": "npm run preview:web",
+    "preview:web": "npm --workspace packages/web run preview"
+  }
+}

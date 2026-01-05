@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+
+# Node
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build outputs
+**/dist/
+**/.vite/
+
+# TypeScript
+*.tsbuildinfo
+
+# Env files
+.env
+.env.*
+
+# Vercel
+.vercel/
+
+# Editor
+.idea/
+.vscode/
+

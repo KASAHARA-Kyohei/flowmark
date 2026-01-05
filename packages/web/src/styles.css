@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
+    Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  background: #0b0d12;
+  color: #e7eaf0;
+}
+
+/* Subtle focus ring */
+:focus-visible {
+  outline: 2px solid rgba(120, 170, 255, 0.9);
+  outline-offset: 2px;
+}
+
+/* Tiny celebration burst (no heavy libs) */
+@keyframes fm-burst {
+  0% {
+    transform: translate(-50%, -50%) scale(0.6);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0;
+  }
+}
+
+.fm-burst {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  pointer-events: none;
+  width: 1px;
+  height: 1px;
+  animation: fm-burst 650ms ease-out forwards;
+}
+
+.fm-burst i {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  opacity: 0.95;
+}
