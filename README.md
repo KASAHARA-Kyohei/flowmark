@@ -59,8 +59,8 @@ npm run dev
 
 このプロジェクトは静的サイトとしてデプロイできます（バックエンド不要）。
 
-- Build：`npm --workspace packages/web run build`
-- Output：`packages/web/dist`
+ - Build：`cd packages/web && npm run build`
+ - Output：`packages/web/dist`
 
 `vercel.json`（`flowmark/vercel.json`）を同梱しているので、基本はそのまま Import するだけで動きます。
 
