@@ -1,7 +1,6 @@
 {
   "framework": "vite",
-  "installCommand": "npm install",
-  "buildCommand": "npm --workspace packages/web run build",
+  "installCommand": "cd packages/web && npm install",
+  "buildCommand": "cd packages/web && npm run build",
   "outputDirectory": "packages/web/dist"
 }
-
